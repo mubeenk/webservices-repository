@@ -1,0 +1,6 @@
+okta:
+  oauth2:
+    client-id: 0oa1uq4r6xARAQy8f357
+    issuer: https://dev-184778.okta.com/oauth2/default
+    redirect-uri: http://localhost:4200/implicit/callback
+    
