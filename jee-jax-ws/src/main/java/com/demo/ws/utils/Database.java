@@ -1,4 +1,4 @@
-package com.keysoft.utils;
+package com.demo.ws.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,12 +16,9 @@ public class Database {
     private static Connection getNewConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-
-//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/trackzilla_schema?&serverTimezone=UTC&useSSL=false",
-//                    "trackzilla_user","password123");
+     
             connection = DriverManager.getConnection("jdbc:mysql://192.168.1.165:3306/trackzilla_schema?&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true",
                     "root","manager123");
-
         } catch (Exception e1) {
             e1.printStackTrace();
         }
