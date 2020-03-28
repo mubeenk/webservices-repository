@@ -64,7 +64,7 @@ public class Application {
                 '}';
     }
 
-    public void toXml() {
+    public void toXml2() {
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(Application.class);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
